@@ -25,7 +25,7 @@ let questions = [
 
     {
         qNumber: 2,
-        q: "What does <div> do?",
+        q: "What does div do?",
         answers: ["Adds color", "Links to other pages", "Groups content", "Shows images"],
         selectedAnswer: null,
         isCorrect: false,
@@ -157,7 +157,7 @@ function goNextQ() {
         <div class="d-flex justify-content-center mb-2">
         <form action="" class="d-flex flex-column align-items-center shadow p-5 m-2"
         style="background-color:#ffffff; width: 550px; height: 55vh;z-index: 5;">
-        <h5 class="p-1 fw-bold" id="showedQuestion">${questions[currentIndex].qNumber}.  ${questions[0].q}</h5>
+        <h5 class="p-1 fw-bold" id="showedQuestion">${questions[currentIndex].qNumber}.  ${questions[currentIndex].q}</h5>
       
         <div class="d-flex flex-column">
         <div class="d-flex flex-row justify-content-start m-3" style="width: 350px;" >
