@@ -61,11 +61,11 @@ let questions = [
 
 ];
 
-
 let currentIndex = 0;
 let correctAnswerCount = 0;
 let timecount = 0;
 let oneQuestionTime = 0;
+
 
 function beginQuestion() {
 
@@ -86,7 +86,6 @@ function beginQuestion() {
      <div class="d-flex justify-content-center">
      <h5 style="z-index: 4;" id="questionNO">Questions ${questions[0].qNumber}/5</h2> 
      </div>`;
-
 
     document.getElementById('question-form').innerHTML = `
     <div class="d-flex justify-content-center mb-2">
@@ -119,12 +118,10 @@ function beginQuestion() {
 
     currentIndex++;
 
-
     // --------Go to next -time out --------------------------
     oneQuestionTime = setTimeout(goNextQ, 20000);
 
 }
-
 
 // next questions load
 function goNextQ() {
